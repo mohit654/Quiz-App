@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz.MainActivity">
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/back">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prison Break Trivia"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/colour"
+            android:text="1"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/ques"
+            android:text="Q:- What is Sucre's first name ? " />
+
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+        <RadioButton
+            style="@style/button"
+            android:text="Fernando"
+            android:id="@+id/q1a" />
+
+        <RadioButton
+            style="@style/button"
+            android:text="Fred"
+            android:id="@+id/q1b" />
+
+        <RadioButton
+            style="@style/button"
+            android:text="Paulo"
+            android:id="@+id/q1c" />
+
+        <RadioButton
+            style="@style/button"
+            android:text="Ricky"
+            android:id="@+id/q1d" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000"
+            android:id="@+id/ans1"/>
+        <TextView
+            style="@style/colour"
+            android:text="2"
+            />
+
+        <TextView
+            style="@style/ques"
+            android:text="Q:- Who killed Oscar Shales ? " />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RadioButton
+            style="@style/button"
+            android:text="Lincoln"
+            android:id="@+id/q2a" />
+
+        <RadioButton
+            style="@style/button"
+            android:text="Paul Kellerman"
+            android:id="@+id/q2b" />
+
+        <RadioButton
+            style="@style/button"
+            android:text="Agent Mahone"
+            android:id="@+id/q2c" />
+
+        <RadioButton
+            style="@style/button"
+            android:text="T-bag"
+            android:id="@+id/q2d" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000"
+            android:id="@+id/ans2"/>
+
+        <TextView
+            style="@style/colour"
+            android:text="3"
+            />
+
+        <TextView
+            style="@style/ques"
+            android:text="Q:- Michael was once a drug addict ? " />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RadioButton
+            style="@style/button"
+            android:text="True"
+            android:id="@+id/q3a" />
+
+        <RadioButton
+            style="@style/button"
+            android:text="False"
+            android:id="@+id/q3b" />
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000"
+            android:id="@+id/ans3"/>
+
+        <TextView
+            style="@style/colour"
+            android:text="4"
+            />
+
+        <TextView
+            style="@style/ques"
+            android:text="Q:- What is T-bag's full name ? " />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                style="@style/button"
+                android:text="Theodore Bag"
+                android:id="@+id/q4a" />
+
+            <RadioButton
+                style="@style/button"
+                android:text="Theodore Bag's"
+                android:id="@+id/q4b" />
+
+            <RadioButton
+                style="@style/button"
+                android:text="Theo Bagell"
+                android:id="@+id/q4c" />
+
+            <RadioButton
+                style="@style/button"
+                android:text="Theodore Bagwell"
+                android:id="@+id/q4d" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000"
+            android:id="@+id/ans4"/>
+
+        <TextView
+            style="@style/colour"
+            android:text="5"
+            />
+
+        <TextView
+            style="@style/ques"
+            android:text="Q:- What is Benjamin Miles Franklin's nickname in prison ? " />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your answer here"
+            android:textSize="18sp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/q5"
+            android:textAllCaps="true"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000"
+            android:id="@+id/ans5"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Your Answers"
+            android:textSize="20sp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/click"
+            android:onClick="result"
+            android:layout_marginRight="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="Unanswered questions will be marked as wrong"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
